@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:orientation="vertical" android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#EBE4E4"
+    >
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#E15BAF83"
+
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+            <com.google.android.material.appbar.AppBarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/appBarLayout"
+                    android:theme="@style/AppTheme.AppBarOverlay">
+                <androidx.appcompat.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:navigationIcon="?attr/homeAsUpIndicator"
+                        android:background="#F062C095"
+                >
+                </androidx.appcompat.widget.Toolbar>
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <ImageView
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    app:srcCompat="@drawable/usuario1"
+                    android:id="@+id/logo"
+                    android:layout_marginTop="2dp"
+                    android:layout_gravity="center"/>
+        </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dp"
+                    android:background="#ffff"
+
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+                <TextView
+                        android:text="Nombre: "
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:textSize="22dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#E15BAF83"
+                        android:id="@+id/Nombre"
+                        android:layout_marginTop="28dp"
+                        android:layout_gravity="center"/>
+                <TextView
+                        android:text="Direccion: "
+                        android:textSize="22dp"
+                        android:textColor="#E15BAF83"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/direccion"
+                        android:layout_marginTop="11dp"
+                        android:layout_gravity="center"/>
+                <TextView
+                        android:text="Ciudad: "
+                        android:textSize="22dp"
+                        android:textColor="#E15BAF83"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ciudad"
+                        android:layout_marginTop="11dp"
+                        android:layout_gravity="center"/>
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:textSize="22dp"
+                        android:textColor="#E15BAF83"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"
+                        android:text="Numero Telefono: "
+                        android:id="@+id/telefono"
+                        android:layout_marginTop="11dp"
+                        android:layout_gravity="center"/>
+                <EditText
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:textSize="25dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:hint="$ Ingrese el costo"
+                        android:id="@+id/venta"
+                        android:layout_marginTop="11dp"
+                        android:layout_gravity="center"/>
+
+                <Button
+                        android:text="Registrar Venta"
+                        android:textSize="20dp"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/registroP"
+                        android:layout_marginTop="31dp"
+                        android:layout_marginBottom="30dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/btn_informacion"
+                        android:textColor="@color/colorBlanco"/>
+            </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
