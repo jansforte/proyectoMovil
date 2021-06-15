@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/appBarLayout"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:navigationIcon="?attr/homeAsUpIndicator"
+                android:background="@color/colorBarra"
+        >
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <ImageView
+                    android:layout_width="150sp"
+                    android:layout_height="150sp"
+                    app:srcCompat="@drawable/ic_launcher_round"
+                    android:id="@+id/logo"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"/>
+
+            <EditText
+                    android:hint="Nombre"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Nombre"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"/>
+
+            <EditText
+                    android:hint="Direccion y barrio"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/direccion"
+                    android:layout_marginTop="11dp"
+                    android:layout_gravity="center"/>
+
+            <EditText
+                    android:hint="Ciudad"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ciudad"
+                    android:layout_marginTop="11dp"
+                    android:layout_gravity="center"/>
+
+            <EditText
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:hint="Numero Telefono"
+                    android:ems="10"
+                    android:id="@+id/telefono"
+                    android:layout_marginTop="11dp"
+                    android:layout_gravity="center"/>
+
+            <EditText
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:hint="Contraseña"
+                    android:ems="10"
+                    android:id="@+id/clave"
+                    android:layout_marginTop="11dp"
+                    android:layout_gravity="center"/>
+
+            <EditText
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:hint="Confirmar Contraseña"
+                    android:ems="10"
+                    android:id="@+id/cclave"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="11dp"/>
+
+            <Button
+                    android:text="Registrar"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/registro"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_gravity="center"
+                    android:background="#F44336"
+                    android:textColor="@color/colorBlanco"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
