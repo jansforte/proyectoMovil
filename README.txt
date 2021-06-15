@@ -8,3 +8,5 @@
 #En caso de que su servidor sea un http, en la carpeta res, en la carpeta xml, hay
 # un archivo llamado react_native_config.xml, allí en la direccion 192.168.0.16, 
 #elimine esa direccion y en su caso escriba la ip o dominio que ud usa. 
+
+#Manual de usuario: https://youtu.be/ATHu1kwO_pE
