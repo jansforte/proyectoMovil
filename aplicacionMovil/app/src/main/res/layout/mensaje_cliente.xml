@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <EditText
+                android:id="@+id/eTEsribirMensaje"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Escribe un mensaje..."
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_toLeftOf="@+id/bTenviarMensaje"
+                android:layout_toStartOf="@+id/bTenviarMensaje" />
+        <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="2dp"
+                app:srcCompat="@android:drawable/ic_menu_send"
+                android:id="@+id/bTenviarMensaje"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="false"
+                android:layout_alignParentEnd="true"
+                android:hint="Enviar"
+                android:background="@drawable/envio"
+
+        />
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvMensajes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/card_view_mensajes"
+                android:layout_below="@+id/appBarLayout"
+                android:layout_alignParentLeft="true"
+                android:visibility="gone"
+                android:layout_alignParentStart="true"
+                android:layout_above="@+id/bTenviarMensaje">
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <LinearLayout
+                android:id="@+id/m_pedido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_below="@+id/appBarLayout"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:visibility="visible"
+                android:layout_above="@+id/bTenviarMensaje" android:layout_marginLeft="0dp"
+                android:layout_marginStart="0dp" android:layout_marginBottom="247dp">
+            <ImageView
+                    android:layout_width="100sp"
+                    android:layout_height="100sp"
+                    android:src="@drawable/ic_pedido"
+            />
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Envía el primer mensaje para \n solicitar tu pedido"
+                    android:textSize="20dp"
+                    android:textStyle="italic"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>
