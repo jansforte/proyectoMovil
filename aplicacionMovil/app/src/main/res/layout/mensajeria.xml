@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <EditText
+            android:id="@+id/eTEsribirMensaje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Escribe un mensaje..."
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/bTenviarMensaje"
+            android:layout_toStartOf="@+id/bTenviarMensaje" />
+        <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                app:srcCompat="@android:drawable/ic_menu_send"
+                android:id="@+id/bTenviarMensaje"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="false"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentEnd="true"
+                android:hint="Enviar"
+                android:background="@drawable/envio"
+                />
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/appBarLayout"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            >
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:navigationIcon="?attr/homeAsUpIndicator"
+                android:background="@color/colorBarra"
+                >
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvMensajes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/card_view_mensajes"
+            android:layout_below="@+id/appBarLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/bTenviarMensaje">
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </RelativeLayout>
+</LinearLayout>
