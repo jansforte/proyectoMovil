@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Chat para Peticion"
+          android:icon="@drawable/ic_chat_persona"
+          android:id="@+id/chatUsuario"/>
+    <item android:title="Configurar cuenta"
+          android:icon="@drawable/ic_ajustes"
+          android:id="@+id/ajusteCuenta"/>
+    <item android:title="Informacion de Contacto"
+          android:icon="@drawable/ic_contacto"
+          android:id="@+id/infContact"/>
+
+    <group android:id="@+id/SalirAdios">
+        <item android:title="Cerrar Sesion"
+              android:icon="@drawable/ic_salir"
+              android:id="@+id/Salir"/>
+    </group>
+
+</menu>

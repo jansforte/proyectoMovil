@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "324270862230",
+    "project_id": "proyectochatandroid-d9872",
+    "storage_bucket": "proyectochatandroid-d9872.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:324270862230:android:bbc2c0dd2bbe5d8d6cb7b7",
+        "android_client_info": {
+          "package_name": "com.example.atoda"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "324270862230-a3eq6bpq99r1jn83jgcvoh5srpl2559u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdTGisE5pkY99b2JB1X4z3g3vaBI67Bms"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "324270862230-a3eq6bpq99r1jn83jgcvoh5srpl2559u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
